@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <title>title</title>
+    <meta charset="utf-8">
+    <title>piglitinzer</title>
   </head>
   <body>
-    <h1>Pig Latinizer!</h1>
+    <h1>Piglatin of Your Word</h1>
+    <h2>Piglatined Word: <%=PigLatinizer.new.piglatinize(@analyzed_text)%></h2>
+
     <form method="post" action="/piglatinize">
     <p>Enter your phrase:</p>
     <textarea name="user_phrase"></textarea>
@@ -13,6 +15,5 @@
     <button type="submit" value="submit"> Submit </button>
 
     </form>
-
   </body>
 </html>
